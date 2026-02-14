@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Register Form</h1>
+            </legend>
+            <table>
+                <tr>
+                    <td><label for="f">FirstName:</label></td>
+                    <td><input type="text" id="f" placeholder="Enter Your FirstName"></td>
+                </tr>
+                <tr>
+                    <td><label for="l">LastName:</label></td>
+                    <td><input type="text" id="l" placeholder="Enter Your LastName"></td>
+                </tr>
+                <tr>
+                    <td><label for="d">DOB:</label></td>
+                    <td><input type="date" id="d"></td>
+                </tr>
+                <tr>
+                    <td><label for="male">Gender:</label></td>
+                    <td>
+                        <label for="male">
+                            <input type="radio" name="gender" id="m">Male
+                        </label><label for="female">
+                            <input type="radio" name="gender" id="female">Female
+                        </label><label for="o">
+                            <input type="radio" name="gender" id="o">Others
+                        </label>
+
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Skills:</label></td>
+                    <td><label for="html"><input type="checkbox" name="html" id="html">HTML</label>
+                        <label for="css"><input type="checkbox" name="" id="css">CSS</label>
+                        <label for="js"><input type="checkbox" name="" id="js">JAVASCRIPT</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select your Course:</label></td>
+                    <td><select name="" id="">
+                            <option value="" selected disabled>--Select Your Course--</option>
+                            <option value="JavA-Fullstack">JavA-Fullstack</option>
+                            <option value="Python_Fullstack">Python_Fullstack</option>
+                            <option value="Data Analayis">Data Analayis</option>
+                            <option value="Data Science">Data Science</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Course Price :</label></td>
+                    <td>15000<input type="range" name="" id="" min="15000" max="35000" step="5000">35000</td>
+                </tr>
+                <tr>
+                    <td><label for="">Select PL for Course:</label></td>
+                    <td><input type="text" list="lang">
+                        <datalist id="lang">
+                            <option value="English">English</option>
+                            <option value="Gujarati">Gujarati</option>
+                            <option value="Hindi">Hindi</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Address:</label></td>
+                    <td><textarea name="" id="" placeholder="Enter Your Address :"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload Your Resume:</label></td>
+                    <td><input type="file" accept=".pdf"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Terms&Condtions:</label></td>
+                    <td><input type="checkbox" name="" id="">I accept T&C</td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Reset"></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

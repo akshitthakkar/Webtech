@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>step,readonly,minlength,maxlength,minlength,pattern aatributes</h1>
+    <form>
+        <label for="">Price :</label>
+        <input type="range" min="0" max="100" step="20"/>
+        <br>
+        <br>
+        <label for="">Pancard :</label>
+        <input type="text" value="PAN1234" readonly/>
+        <br>
+        <br>
+        <label for="">Username:</label>
+        <input type="text" minlength="3" maxlength="8">
+        <br>
+        <br>
+        <label for="">Password:</label>
+        <input type="text" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8}" maxlength="8"
+        title="Password must includes uppercase , lowercase and numbers " required>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

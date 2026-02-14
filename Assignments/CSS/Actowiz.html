@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f6f8fc;
+        }
+
+        header {
+            width: 100%;
+            height: 72px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            background: #fff;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        header img {
+            width: 150px;
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: blue;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 150px;
+        }
+
+        .main h1 {
+            color: #290660;
+        }
+
+        .main p {
+            color: #423F56;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+
+
+
+
+
+        }
+
+        span {
+            margin-left: 120px;
+            margin-top: 12px;
+        }
+
+        .main-card {
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            flex-wrap: wrap;
+            border: 1px solid;
+        }
+
+        .card {
+            width: 30%;
+            height: 200px;
+            border: 1px solid #9483B0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 15px;
+
+
+        }
+
+        .card h3 {
+
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background-color: #F3F3F5;
+            text-align: center;
+            padding: 15px 40px;
+            margin-top: 5px;
+        }
+
+        .card p {
+            color: #423F3D;
+            font-size: 16px;
+            margin-left: 13px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://www.actowizsolutions.com/assets/new-img/logo/Actowiz-Logo-color-neww.svg">
+        <nav>
+            <ul>
+                <li><a href="">Services</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Hire Developers</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <button>Let's Talk</button>
+        </nav>
+    </header>
+    <section>
+        <div class="main">
+            <h1>How Can Businesses Benefit from Web Scraping?
+            </h1>
+
+            <p>Leverage structured data to improve efficiency, make faster decisions, and dominate <br> <span>your
+                    market with
+                    custom scraping solutions.</span>
+
+            </p>
+        </div>
+        <div class="main-card">
+            <div class="card" id="card1">
+                <h3><i class="fa-solid fa-database"></i>Extract Valuable Data Insights</h3>
+                <p>Turn websites into structured, ready-to-analyze data. Get actionable insights for pricing, competitor
+                    tracking, market trends, and strategic planning.</p>
+            </div>
+            <div class="card" id="card2">
+                <h3>Automate Repetitive Processes
+                </h3>
+                <p>Scrape millions of pages without manual effort. Automate data collection for tasks like monitoring
+                    reviews, tracking SKUs, or updating inventory.
+                </p>
+            </div>
+            <div class="card" id="card3">
+                <h3> <i class="fa-solid fa-envelope"></i>Transform Websites into Business Value</h3>
+                <p>Convert unstructured web content into business-ready data that fuels decisions, enhances
+                    applications, and boosts operational efficiency.
+                </p>
+            </div>
+            <div class="card" id="card4">
+                <h3><i class="fa-solid fa-robot"></i>Fuel AI & Machine Learning
+                </h3>
+                <p>Turn websites into structured, ready-to-analyze data. Get actionable insights for pricing, competitor
+                    tracking, market trends, and strategic planning.</p>
+            </div>
+            <div class="card" id="card5">
+                <h3>Web Scraping for All Business Sizes</h3>
+                <p>Turn websites into structured, ready-to-analyze data. Get actionable insights for pricing, competitor
+                    tracking, market trends, and strategic planning.</p>
+            </div>
+            <div class="card" id="card6">
+                <h3>Gain a Competitive Edge</h3>
+                <p>Turn websites into structured, ready-to-analyze data. Get actionable insights for pricing, competitor
+                    tracking, market trends, and strategic planning.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

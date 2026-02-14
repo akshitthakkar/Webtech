@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px solid gray;
+            margin: 20px auto;
+        }
+
+        #box1 {
+            background-image: conic-gradient(red, yellow);
+        }
+
+        #box2 {
+            background-image: conic-gradient(red 0deg 45deg, yellow 45deg 90deg, blue 90deg);
+        }
+
+        #box3 {
+            background-image: conic-gradient(red 0deg 90deg, yellow 90deg 180deg, blue 180deg 270deg, orange 270deg);
+        }
+
+        #box4 {
+            background-image: conic-gradient(red 0deg 90deg, yellow 90deg 180deg, blue 180deg 270deg, orange 270deg);
+            animation: rotate 5s linear infinite;
+        }
+        @keyframes rotate {
+            from{
+                transform : rotate(0deg)
+            } to {
+                transform: rotate(360deg);
+            }
+        }
+          #box5 {
+            background-image: conic-gradient(red 0deg 45deg, white 45deg 315deg , red 315deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>3.Conic Gradient</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+</body>
+
+</html>

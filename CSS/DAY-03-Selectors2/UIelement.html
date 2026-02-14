@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled {
+            background-color: greenyellow;
+        }
+
+        input:disabled {
+            background-color: aqua;
+            cursor: not-allowed;
+        }
+
+        input:checked {
+            accent-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>UI element Selector</h1>
+    <div>
+        <label for="">Username: </label>
+        <input type="text" placeholder="Enter Username">
+    </div>
+    <div>
+        <label for="">Admin : </label>
+        <input type="text" placeholder="Not allowed" disabled>
+    </div>
+    <div>
+        <label for=""></label>
+        <input type="checkbox" checked>I accept Terms & Conditions
+    </div>
+</body>
+
+</html>

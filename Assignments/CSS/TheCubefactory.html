@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #card1 {
+            width: 50%;
+            height: calc(100vh);
+            border: 1px solid transparent;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .form form {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        input {
+            border-radius: 3px;
+            border: 1px solid black;
+            width: 350px;
+            padding: 8px 0px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 550;
+        }
+
+        #card1 p {
+            color: gray;
+        }
+
+        button {
+            width: 350px;
+            padding: 10px 15px;
+            border-radius: 10px;
+
+            color: white;
+            border: 0px;
+        }
+
+        .Sigin {
+            background-color: blue;
+
+        }
+        .google{
+            background-color: white;
+            color: black;
+            border-radius: 2px gray !important;
+            border: 1px solid gray;
+
+        }
+
+        .check {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+
+        .check input {
+            width: 20px;
+        }
+
+        .SignUp {
+            margin-top: 10px;
+        }
+
+        .check a {
+            margin-left: 10px;
+        }
+
+
+        #card2 {
+            width: 50%;
+            height: calc(100vh);
+            border: 1px solid transparent;
+            background-image: url(./assets/photo_2026-02-10_12-18-54.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card" id="card1">
+
+        <div class="form">
+            <h1>Welcome Back </h1>
+            <p>Please enter Your details</p>
+            <form action="">
+                <label for="">Email :</label><br>
+                <input type="email"><br>
+                <label for="">Password: </label><br>
+                <input type="password"><br>
+                <div class="check">
+                    <input type="checkbox" name="" id=""><span> Remember me For 30 Days</span>
+                    <a href="">Forgot Password</a><br>
+                </div>
+                <button class="Sigin">Signin</button><br>
+                <button class="google">Sign in with Google</button>
+                <p class="SignUp">Does not have a Account ? <a href="">SignUp</a> </p>
+
+            </form>
+        </div>
+    </div>
+    <div class="card" id="card2"></div>
+</body>
+
+</html>

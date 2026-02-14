@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 1.Targetting by their attribute name */
+    input[type]{
+        background-color: yellow;
+    }
+    /* 2. Exact Value */
+    input[type = "password"]{
+        border: 2px solid blue;
+    }
+
+    /* 3. Taarget the word present inside anywhere in  the attribute value */
+
+    a[href*="qspiders"]{
+        text-decoration: none;
+
+    }
+
+    /* 4 . the exact word is present inside the entire attribute value */
+
+    button[class~="btn"]{
+        background-color: gray;
+        padding: 8px 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .primary{
+        border: 2px solid red;
+    }
+
+    /* 5 . Ending with vaalue */
+
+    img[src$="jpg"] {
+        border: 2px solid slateblue;
+    }
+
+
+    /* 6. Starting Value */
+
+    p[class^="first"]{
+        background-color: skyblue;
+    }
+    p[class^="second"]{
+        background-color: salmon;
+    }
+
+
+    /* 7. Hypen Value */
+
+    p[class |="en"]{
+        border: 2px solid rebeccapurple;
+    }
+</style>
+
+<body>
+    <h1>Attribute selector</h1>
+    <h2>Input elements</h2>
+    <input type="text" name="" id="" placeholder="Enter Your name">
+    <input type="email" placeholder="Enter your email">
+    <input type="password" name="" id="" placeholder="Enter Your Password">
+    <br>
+    <br>
+    <!-- Links -->
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.qspiders.com">Qspiders</a>
+    <br>
+    <br>
+    <!-- Buttons -->
+    <button class="btn primary">Primary</button>
+    <button class="btn secondary">Secondary</button>
+    <br>
+    <br>
+    <!-- Img -->
+    <img src="banner.jpg" alt="Banner">
+    <img src="logo.png" alt="Logo">
+    <br>
+    <br>
+    <p class="first para">First Paragraph</p>
+    <p class="second para">Second Paragraph</p>
+    <br>
+    <br>
+    <p class="en-IN">Namaste India</p>
+    <p class="en">Hello</p>
+    <p class="en-fr">Bonjour</p>
+    <p class="sp-en">Ciao</p>
+    <p class="jp">Konnichiwa</p>
+</body>
+
+</html>

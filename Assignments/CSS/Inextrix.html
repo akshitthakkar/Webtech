@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Offerings</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f6f8fc;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            height: 72px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            background: #fff;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        header img {
+            width: 150px;
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: blue;
+        }
+
+        /* SECTION */
+        section {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 36px;
+        }
+
+        section>p {
+            margin: 20px auto 40px;
+            width: 650px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* FLEX CARDS */
+        .cards {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .container {
+            width: 48%;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .container h1 {
+            color: #1f2b7b;
+            font-size: 22px;
+        }
+
+        .inner {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .innerbox {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border: 1px solid transparent;
+            height: auto;
+            padding: 15px 0;
+        }
+
+        .tech {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+        }
+
+        .tech a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: 530;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+        }
+
+        #fs {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/freeswitch-1-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Asterisk {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/asterisk-1-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .OpenShip {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/opensips-2-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Kamalio {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/kamailio-2-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Webrtc {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/webrtc-2-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Android {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/android-1-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Ios {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/ios-1-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .ReactNative {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/react-native-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Flutter {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/flutter-1-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .web {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/progresiv-web-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .react {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/react-native-2.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Angular {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/angular-2-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Node {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/node-js-2.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Laravel {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/laravel-1.webp?fit=80%2C80&ssl=1);
+        }
+
+        .Javascript {
+            background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/js-1-1.webp?fit=80%2C80&ssl=1);
+        }
+        .Ansible{background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/ansible-1.webp?fit=80%2C80&ssl=1);}
+        .Docker{background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/docker-1-1.webp?fit=80%2C80&ssl=1);}
+        .Jenkis{background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/Jenkins-1-1.webp?fit=80%2C80&ssl=1);}
+
+        .Git{background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/git-1.webp?fit=80%2C80&ssl=1);}
+
+        .Kubernetes{background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/kubernetes-1-1.webp?fit=80%2C80&ssl=1);}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://inextrix.com/wp-content/uploads/2023/10/Inextrix_logo-2-1.png">
+        <nav>
+            <ul>
+                <li><a href="">Services</a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Hire Developers</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <button>Let's Talk</button>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Our Offerings</h1>
+        <p>
+            Our subject matter experts and technical specialists ensure to give you the benefit of
+            transformative technologies, impressive scale, and supersonic speed.
+        </p>
+
+        <div class="cards">
+
+            <!-- VOIP -->
+            <div class="container">
+                <h1>VoIP Development</h1>
+                <p class="inner">
+                    Quality communication propels ambitions and growth in organizations. We build sustainable,
+                    scalable, and brilliant real time communication tools that match your vision and business goals
+                    with our tailored VoIP development services.
+                </p>
+
+                <div class="innerbox">
+                    <div class="tech">
+                        <div class="box" id="fs"></div>
+                        <a href="">Freeswitch</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Asterisk"></div>
+                        <a href="">Asterisk</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box OpenShip"></div>
+                        <a href="">OpenShip</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Kamalio"></div>
+                        <a href="">Kamalio</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Webrtc"></div>
+                        <a href="">WebRTC</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="container">
+                <h1>Mobile App Development</h1>
+                <p class="inner">
+                    Extend your reach and clientele with highly engaging mobile applications that fuel up returns and
+                    business adaptability. Our native and cross platform mobile app development transforms dreams into
+                    amplified revenue generation.
+
+
+                </p>
+
+                <div class="innerbox">
+                    <div class="tech">
+                        <div class="box Android"></div>
+                        <a href="">Android</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Ios"></div>
+                        <a href="">IOS</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box ReactNative"></div>
+                        <a href="">ReactNative</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Flutter"></div>
+                        <a href="">Flutter</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box web"></div>
+                        <a href="">Progressive Web</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- WEB -->
+            <div class="container">
+                <h1>Web Development</h1>
+                <p class="inner">
+                    Reduce bounce rates, increase navigation, and improve returning visitors. Bring out the best for
+                    your digital presence with an enchanting web app, website, and web products built by the industry’s
+                    leading web development company.
+
+
+                </p>
+                <div class="innerbox">
+                    <div class="tech">
+                        <div class="box react"></div>
+                        <a href="">React</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Angular"></div>
+                        <a href="">Angular</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Node"></div>
+                        <a href="">Node JS</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Laravel"></div>
+                        <a href="">Laravel</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Javascript"></div>
+                        <a href="">Javascript</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DEVOPS -->
+            <div class="container">
+                <h1>DevOps Services</h1>
+                <p class="inner">
+                    Propel your business scale by harmonizing development and operational jobs to build the best quality
+                    products and solutions within the shortest time and gain a competitive advantage with our strategic
+                    and outstanding DevOps services.
+
+
+                </p>
+                <div class="innerbox">
+                    <div class="tech">
+                        <div class="box Jenkis"></div>
+                        <a href="">Jenkis</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Docker"></div>
+                        <a href="">Docker</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Git"></div>
+                        <a href="">Git</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Ansible"></div>
+                        <a href="">Ansible</a>
+                    </div>
+
+                    <div class="tech">
+                        <div class="box Kubernetes"></div>
+                        <a href="">Kubernetes</a>
+                    </div>
+
+                </div>
+    </section>
+
+</body>
+
+</html>

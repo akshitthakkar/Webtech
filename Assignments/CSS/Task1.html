@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 280px;
+            border: 1px solid red;
+            background-image: url(https://b2343758.smushcdn.com/2343758/wp-content/uploads/buying-vs-leasing-vs-renting-car-1030x686.jpg?lossy=1&strip=1&webp=1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            background-clip: text;
+            color: transparent; 
+            background-image: linear-gradient(to right ,orange , black);
+            font-size: 30px;
+        }
+
+        p {
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        .container {
+            width: 90%;
+            height: auto;
+            border: 1px solid transparent;
+            margin: 10px auto;
+
+        }
+
+        .box {
+            width: 320px;
+            height: 200px;
+            border: 1px solid transparent;
+            display: inline-block;
+            margin: 15px 7px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+            
+            
+        }
+        
+
+        #box1 {
+            background-image: url(https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .rent {
+            width: 80px;
+            height: 20px;
+            border-radius: 8px;
+            background-color: red;
+            border: 1px solid transparent;
+            margin: 5px 3px;
+
+            text-align: center;
+        }
+
+        .sale {
+            width: 80px;
+            height: 20px;
+            border-radius: 8px;
+            background-color: orange;
+            border: 1px solid transparent;
+            margin: 5px 3px;
+            text-align: center;
+        }
+
+        .trans {
+            width: 250px;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid transparent;
+            margin-top: 90px;
+            margin-left: 25px;
+            color: white;
+            text-align: center;
+
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .box:hover{
+            box-shadow: 1px 2px 3px  5px  rgba(0, 0, 0, 0.3);
+
+        }
+
+        #box2 {
+            background-image: url(https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        #box3 {
+            background-image: url(https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+        #box4 {
+            background-image: url(https://images.unsplash.com/photo-1615887110697-0819ec23465f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+        #box5 {
+            background-image: url(https://images.unsplash.com/photo-1490902931801-d6f80ca94fe4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+        #box6 {
+            background-image: url(https://images.unsplash.com/photo-1514053514818-a89e7ce304e9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+        #box7 {
+            background-image: url(https://images.unsplash.com/photo-1769959032480-4b0f1bb57aa8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+        #box8 {
+            background-image: url(https://images.unsplash.com/photo-1769641240938-1125d7421364?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <h2>Recent Rental or Selling Car Options</h2>
+    <p>Discover how much latest car have been sold </p>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="rent">For Rent</div>
+            <div class="trans">
+                <h3>176 Kingsberry Anderson</h3>
+                <p> Rochester, NY 14626</p>
+                <button>$3100/Month</button>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <div class="sale">For Sale</div>
+            <div class="trans">
+                <h3>45 Lianne Dr, Greece Street</h3>
+                <p>Tasley, VA 23441</p>
+                <button>$30000</button>
+            </div>
+        </div>
+        <div class="box" id="box3">
+            <div class="rent">For Rent</div>
+            <div class="trans">
+                <h3>176 Kingsberry Anderson</h3>
+                <p> Rochester, NY 14626</p>
+                <button>$1500/Month</button>
+            </div>
+        </div>
+        <div class="box" id="box4">
+            <div class="sale">For Sale</div>
+            <div class="trans">
+                <h3>45 Lianne Dr, Greece Street</h3>
+                <p>Tasley, VA 23441</p>
+                <button>$245000</button>
+            </div>
+        </div>
+        <div class="box" id="box5">
+            <div class="rent">For Rent</div>
+            <div class="trans">
+                <h3>176 Kingsberry Anderson</h3>
+                <p> Rochester, NY 14626</p>
+                <button>$2750/Month</button>
+            </div>
+        </div>
+        <div class="box" id="box6">
+            <div class="sale">For Sale</div>
+            <div class="trans">
+                <h3>45 Lianne Dr, Greece Street</h3>
+                <p>Tasley, VA 23441</p>
+                <button>$25000</button>
+            </div>
+        </div>
+        <div class="box" id="box7">
+            <div class="rent">For Rent</div>
+            <div class="trans">
+                <h3>176 Kingsberry Anderson</h3>
+                <p> Rochester, NY 14626</p>
+                <button>$8000/Month</button>
+            </div>
+        </div>
+        <div class="box" id="box8">
+            <div class="sale">For Sale</div>
+            <div class="trans">
+                <h3>45 Lianne Dr, Greece Street</h3>
+                <p>Tasley, VA 23441
+
+                </p>
+                <button>$350000</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
